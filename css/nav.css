@@ -1,0 +1,100 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav 1 (Top Bar) */
+.nav-1 {
+  background-color: #0077b6; /* Equivalent to bg-primary */
+  padding: 10px 0;
+}
+
+.ph {
+  display: flex;
+  gap: 10px;
+  color: #fff; /* Equivalent to text-secondary */
+  align-items: center;
+}
+
+.ph .icon {
+  width: auto;
+  height: auto;
+}
+
+.phone-number {
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Nav 2 (Main Navigation) */
+.nav-2 {
+  padding: 20px 0;
+}
+
+.nav-2 .logo {
+  width: auto;
+  height: 50px;
+}
+
+.nav-links-secondary {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links-secondary li {
+  list-style: none;
+}
+
+.nav-links-secondary a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.btn-contact {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 2px solid #ffdd1e;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .nav-links-secondary {
+    display: none;
+  }
+}

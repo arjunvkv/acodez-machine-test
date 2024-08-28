@@ -1,0 +1,78 @@
+.why-decee-container {
+  background: linear-gradient(
+    104deg,
+    rgba(42, 167, 181, 1) 0%,
+    rgba(11, 93, 163, 1) 35%
+  ); /* Replace with your custom gradient */
+  width: 100%;
+  height: 100%;
+  padding-top: 7rem; /* py-28 */
+  padding-bottom: 7rem;
+  position: relative;
+}
+
+.why-decee-background {
+  position: absolute;
+  display: none; /* Hidden by default */
+  bottom: 0;
+  right: 0;
+}
+
+.why-decee-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 2px solid #ffdd1e;
+}
+
+@media (min-width: 768px) {
+  .why-decee-background {
+    display: block;
+  }
+}
+
+.why-decee-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  padding: 1.25rem; /* p-5 */
+  place-items: center;
+}
+
+@media (min-width: 768px) {
+  .why-decee-content {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+  }
+}
+
+.why-decee-image {
+  grid-column: span 2;
+  position: relative;
+  z-index: 10;
+}
+
+.why-decee-text-content {
+  grid-column: span 3;
+  color: white;
+}
+
+.why-decee-heading {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.why-decee-paragraphs {
+  font-size: 20px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.why-decee-button-container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
